@@ -27,7 +27,7 @@ let weather = {
         document.querySelector(".wSpeed").innerText = "Wind speed: " + speed + " km/h"
         document.querySelector(".pressure").innerText = "Pressure: " + pressure + " mb"
         document.querySelector(".clouds").innerText = "Cloud: " + all + "%"
-        document.querySelector(".weather").classList.remove("loading")
+        document.querySelector(".weather").classList.remove("load")
 
     },
     search: function() {

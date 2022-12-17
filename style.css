@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+/*--------mainpage-------*/
 .main{
     display: flex;
     align-items: center;
@@ -13,9 +14,8 @@
     background-size: cover;
     background-position: center;
 }
-.temp{
-    font-size: 50px;
-}
+
+/*--------forCard-------*/
 .card{
     background: rgba(0, 0, 0, 0.508);
     padding: 25px;
@@ -28,6 +28,8 @@
 .card:hover{
     transform: translateY(-5px);
 }
+
+/*----------searchDiv------*/
 .search{
     display: flex;
     justify-content: space-between;
@@ -46,7 +48,7 @@
 
 }
 input.searchBar{
-    padding:10px;
+    padding:10px 10px 10px 20px;
 }
 button{
     flex-basis: 15%;
@@ -62,44 +64,17 @@ button{
 button:hover{
     background: rgba(0, 0, 0, 0.618);
 }
+
+/*-----------mainTexts--------*/
+.weather{
+    cursor:default;
+}
 .sub{
     display: flex;
     justify-content: center;
 }
 .city{
     margin-top: 30px;
-    /* margin-bottom: 30px; */
-}
-.th{
-    display: flex;
-}
-.th p{
-    display: flex;
-    align-items: flex-end;
-    font-size: 20px;
-    font-weight: 1000;
-}
-.hue{
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid white;
-    justify-content: center;
-}
-.hue img{
-    margin-left: -10px;
-}
-.huehue{
-    font-size: 15px;
-}
-.hh{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-}
-.des{
-    text-transform: capitalize;
-
 }
 .temp{
     font-size: 70px;
@@ -112,16 +87,38 @@ button:hover{
 .cel{
     margin-top: -10px;
 }
-.weather{
-    cursor:default;
+
+/*------------sky'sView-------*/
+.state{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    justify-content: center;
 }
-.weather.loading{
+.state img{
+    margin-left: -10px;
+}
+.des{
+    text-transform: capitalize;
+}
+
+/*--------------supportingDetails----------------*/
+.sDetails{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.list{
+    font-size: 15px;
+}
+.weather.load{
     visibility: hidden;
     max-height: 20px;
     position: relative; 
     margin-top:20px; 
 }
-.weather.loading::after{
+.weather.load::after{
     visibility: visible;
     content: "Know weather by City";
     font-size: 12px;
